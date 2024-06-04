@@ -1,0 +1,81 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: linear-gradient(to bottom, #7EB09B, #5D987F, #476A6F);
+  // background: #9a9a9a;
+  // mix-blend-mode: multiply;
+  box-shadow: 8px 2px 50px #434543;
+  overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  
+    h2 {
+      color: var(--title-clr);
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--title-clr);
+    }
+}
+
+
+.library-song {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  margin-block: 1.25rem;
+  cursor: pointer;
+
+  transition: background 0.7s ease;
+
+  &:first-child {
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 30%;
+  }
+  &:hover {
+    background: #E1DCB7;
+    opacity: 0.9;
+  }
+}
+
+.song-description {
+  padding-inline-start: 1rem;
+  overflow: hidden;
+
+  h3 {
+    font-size: 1.125rem;
+    padding-block-end: 0.5rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #45877566 transparent;
+}
+
+.selected {
+  background: #D0C88E;
+}
+
+.active-library {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
