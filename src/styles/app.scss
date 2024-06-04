@@ -1,0 +1,64 @@
+/* --------------------
+    CUSTOM PROPERTIES
+--------------------- */
+:root {
+  --ff-sans-body: 'Apfel Grotezk', sans-serif;
+  --ff-sans-title: 'Mattone', sans-serif;
+  --ff-serif: 'Mazius Display', serif;
+
+  --title-clr: #3b3825;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(0, 0%, 15%);
+}
+
+body {
+  font-family: var(--ff-sans-body);
+  min-height: 100svh;
+  background: #F7F8F2;
+}
+
+// canvas {
+//   min-height: 100svh;
+//   width: 100svw;
+//   position: absolute;
+//   z-index: -1;
+// }
+
+@import './song';
+@import './player';
+@import './library';
+@import './/nav';
